@@ -1,0 +1,53 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	background-color: #eeeeee;
+}
+
+.feature {
+	color: #ff8c00;
+}
+.button {
+	background-color: #f1c40f;
+	border: none;
+}
+
+.offer {
+	border: solid;
+}
+
+.offer header {
+	background-color: #dddddd;
+}
+
+#header {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+
+#header-img {
+	width: 300px;
+}
+
+#nav-bar {
+	text-align: center;
+}
+
+#nav-bar > ul {
+	width: 35vw;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
+}
+
+#nav-bar a {
+	list-style: none;
+	text-decoration: none;
+	color: black;
+}
