@@ -18,38 +18,9 @@ body {
 	min-height: 75px;
 	padding: 0 20px;
 	display: flex;
-	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
 	background-color: #eeeeee;
-}
-
-@media screen and (max-width: 650px) {
-	#header ul {
-		align-items: center;
-		flex-direction: column;
-	}
-
-	#page-wrapper {
-		margin-top: 120px;
-	}
-
-	#header li {
-		padding-bottom: 5px;
-	}
-
-	#nav-bar {
-		margin-top: 10px;
-	}
-
-	#pricing {
-		align-items: center;
-		flex-direction: column;
-	}
-	
-	.offer {
-		margin: 0 auto 10px auto;
-	}
 }
 
 @media screen and (max-width: 600px) {
@@ -64,11 +35,11 @@ body {
 	font-size: 1em;
 }
 
-.offer {
+.product {
 	border: 1px solid;
 }
 
-.offer header {
+.product header {
 	background-color: #dddddd;
 }
 
@@ -140,6 +111,11 @@ main {
 	
 }
 
+.button:hover {
+	background-color: #ffa500;
+	cursor: pointer;
+}
+
 .feature {
 	display: flex;
 	height: 125px;
@@ -164,6 +140,20 @@ main {
 	margin: 0;
 }
 
+@media screen and (max-width: 550px) {
+	#features .icon {
+		display: none;
+	}
+
+	#features {
+		text-align: center;
+	}
+
+	#features .text {
+		width: 100%;
+	}
+}
+
 #how-it-works {
 	display: flex;
 	padding: 50px 0;
@@ -175,7 +165,7 @@ main {
 	justify-content: space-around;
 }
 
-#pricing .offer {
+#pricing .product {
 	width: 300px;
 	text-align: center;
 	padding-bottom: 1em;
@@ -217,4 +207,41 @@ footer li {
 	margin: 5px 0 0 0;
 	font-size: 0.9em;
 	color: #444;
+}
+
+@media screen and (max-width: 650px) {
+	#header ul {
+		align-items: center;
+		flex-direction: column;
+	}
+
+	#page-wrapper {
+		margin-top: 120px;
+	}
+
+	#header li {
+		padding-bottom: 5px;
+	}
+
+	#header-img {
+		/* margin-left: ; */
+		margin: 0 auto 0 auto;
+	}
+
+	.logo {
+		margin-top: 15px;
+	}
+
+	#nav-bar {
+		margin-top: 10px;
+	}
+
+	#pricing {
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.product {
+		margin: 0 auto 10px auto;
+	}
 }
