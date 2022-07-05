@@ -1,4 +1,4 @@
 # porduct_landing_page
 
-<input src="./sreen/Screen_Shot_1" />
-<input src="./sreen/Screen_Shot_2" />
+<img src="./screen/Screen_Shot_1.png" />
+<img src="./screen/Screen_Shot_2.png" />
