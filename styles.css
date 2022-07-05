@@ -2,14 +2,60 @@
 	box-sizing: border-box;
 }
 
+#page-wrapper {
+	position: relative;
+}
+
 body {
 	margin: 0;
 	font-family: sans-serif;
 	background-color: #eeeeee;
 }
 
-#page-wrapper {
-	position: relative;
+#header {
+	position: fixed;
+	top: 0;
+	min-height: 75px;
+	padding: 0 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #eeeeee;
+}
+
+@media screen and (max-width: 650px) {
+	#header ul {
+		align-items: center;
+		flex-direction: column;
+	}
+
+	#page-wrapper {
+		margin-top: 120px;
+	}
+
+	#header li {
+		padding-bottom: 5px;
+	}
+
+	#nav-bar {
+		margin-top: 10px;
+	}
+
+	#pricing {
+		align-items: center;
+		flex-direction: column;
+	}
+	
+	.offer {
+		margin: 0 auto 10px auto;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#header {
+		flex-wrap: wrap;
+	}
 }
 
 .button {
@@ -26,27 +72,18 @@ body {
 	background-color: #dddddd;
 }
 
-#header {
-	position: fixed;
-	top: 0;
-	min-height: 75px;
-	padding: 0 20px;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	background-color: #eeeeee;
-}
-
 .logo {
 	width: 60vw;
 }
 
 #header-img {
-	width: 300px;
-}
-
-#nav-bar {
-	text-align: center;
+	width: 100%;
+	height: 100%;
+	max-width: 300px;
+	margin-left: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 ul {
@@ -58,6 +95,12 @@ a {
 	color: black;
 }
 
+main {
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+}
+
 #nav-bar > ul {
 	width: 35vw;
 	margin: 0;
@@ -67,7 +110,16 @@ a {
 }
 
 #hero {
+	margin-top: 50px;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
 	text-align: center;
+	justify-content: center;
+}
+
+#hero h2 {
+	margin: 0 0 20px 0;
 }
 
 #hero input[type="email"] {
@@ -86,11 +138,6 @@ a {
 	font-weight: bold;
 	font-size: 1em;
 	
-}
-
-main {
-	max-width: 1000px;
-	margin: 0 auto;
 }
 
 .feature {
